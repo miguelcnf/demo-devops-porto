@@ -1,3 +1,10 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: LGzu1kc4via9mg4tFkESt+a0SBDrpYBIeiZcCtht2htn6lZpWaXcuE2eNjYiGqMbKIE/BYMaWBJv03oAd/gZlPE7YJiDeOn8e0htzd9lY1vSP3zuqzzAMmNbLvgo3vfZp3/Dk7cuPUKii8eyRiBXz8nCskU1llfZdCuFQMAKBGf58P04CgVvSu/miFwCfaFxuSogCT2Gr4uS0OVasMJG2h/7iBcesN4STQGF3rfFNV4p3Z+sFdtzwk9HDjfxSL+XAmyhOFFwr5kAhl+EeEw5SotG5NcRGfufZC8Ohzv1EqdiZlIIxfvhvRGgeyY0EgLV86xw06+KpwLe0VSjqu77/qHhZJE0+0wQTrQu15RXnEa4ATwF9caIRcfrGvI5hNM1y0A2DXEMhfGROiEoR8iWW22EV3bItzUlKhPPKm8k9P3mZ4zo1PtsiVQL28qG7kmS6jPYLpmAnpeTD7IdZyXplcQXaQvliJemSMVdW1vRqDnZhvvVFhjzpRmIzATorzU/Ni5TbpbVm6CA/5LgcfoL3+Ndk7V4Vqbqy1nD2DQO7HEjfI13jJfyvGMHAsO010oeMTYNzVohlzDSsPxQkE8ACSmX50DBPzLtdI0wwSvTjqjcYBZmO86pha/FBWgz2RxH6ktwUd+Lm6r251OzQDgfpSftJ//apV2a5oqBX8oeSEM=
+  app: demo-devops-porto
+  on:
+    repo: miguelcnf/demo-devops-porto
